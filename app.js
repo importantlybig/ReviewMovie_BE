@@ -28,8 +28,8 @@ app.use('/api/admin', adminRouter)
 app.use('/*', handleNotFound)
 app.use(errorHandler)
 
-const PORT = process.env.PORT || 8000
+const port = process.env.PORT || 8000
 
-app.listen(PORT, () => {
-	console.log(`The server is listening on port ${PORT}`)
+app.listen(port, () => {
+	console.log(`The server is listening on port ${port}`)
 })
